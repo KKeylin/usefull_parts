@@ -1,0 +1,97 @@
+.input-wrap {
+  position: relative;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+
+  &.error {
+    .input-component,
+    .dropdown {
+      border-color: $error;
+    }
+  }
+
+  .input-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .additional-info {
+      font-size: 14px;
+      font-weight: 400;
+      color: $label-component;
+    }
+  }
+
+  &.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+
+    .input-component {
+      background-color: $input-disabled;
+    }
+  }
+
+  .input-component {
+    width: 100%;
+    border: 1px solid $input-border-color;
+    border-radius: 2px;
+    color: $input-text-color;
+    font: {
+      family: $base-font-family;
+      size: 16px;
+      weight: 400;
+    }
+
+    &::placeholder {
+      color: $input-placeholder;
+      font: {
+        family: $base-font-family;
+        size: 16px;
+        weight: 400;
+      }
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      opacity: 1;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .separated-time {
+    display: flex;
+    align-items: center;
+
+    .divider {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+
+  .react-datepicker-wrapper {
+    .react-datepicker__close-icon:after {
+      bottom: auto;
+    }
+  }
+
+  .react-datepicker-wrapper,
+  .react-datepicker__input-container {
+    width: 100%;
+  }
+
+  .react-datepicker__close-icon {
+    top: 10%;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+
+    &::after {
+      background-color: transparent;
+      content: '\D7';
+      color: $grey-24;
+      font-size: 22px;
+      padding-right: 22px;
+    }
+  }
+}

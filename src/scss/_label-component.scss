@@ -1,0 +1,13 @@
+.label-component {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: $grey-1;
+
+  &.mark {
+    &::after {
+      content: '*';
+      margin-left: 4px;
+      color: $label-component-mark;
+    }
+  }
+}
