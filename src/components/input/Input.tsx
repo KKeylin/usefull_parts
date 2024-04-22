@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { InputWrapComponent } from 'components/core/inputWrap';
+import { InputWrapComponent } from '../inputWrap';
 
 export const InputComponent = (props: BaseInputType<React.ChangeEvent<HTMLInputElement>>): React.ReactElement => {
   const {

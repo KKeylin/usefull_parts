@@ -1,8 +1,8 @@
 import classNames from 'classnames';
 import * as React from 'react';
 
-import { ErrorLabel } from 'components/core/errorLabel';
-import { TitleLabel } from 'components/core/titleLabel';
+import { ErrorLabel } from '../errorLabel';
+import { TitleLabel } from '../titleLabel';
 
 type Props = {
   errorMessage?: string;
